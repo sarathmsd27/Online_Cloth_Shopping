@@ -1,0 +1,45 @@
+<section class="frontpage">
+  <img src="../../../assets/Frontimg/Homeimg.png">
+        <h4><b>Trade-In-Offer</b></h4>
+        <h2>Super value deals </h2>
+        <h1>On all products</h1>
+        <h5>Save more with coupons upto 50% off !...</h5>
+         <b><mark>Login to Shop now</mark></b>
+
+    </section>
+
+
+<div class="container">
+     <div class="details">
+        
+        <app-title title="Login"></app-title>
+        <form [formGroup]="loginForm" (ngSubmit)="submit()">
+            <div class="input-container">
+                <div class="input-container">
+                    <label for="email">Email</label>
+                    <div>
+                        <input type="email" placeholder="abd@gmail.com" formControlName="email">
+                    </div>
+                    <div class="error-list" *ngIf="fc.email.errors && isSubmitted">
+                        <div *ngIf="fc.email.errors.required">Should not be empty</div>
+                        <div *ngIf="fc.email.errors.email">MailId is not correct</div>
+                    </div>
+                </div>
+                <div class="input-container">
+                    <label for="password">Password</label>
+                </div>
+               
+                <div>
+                    <input type="password" placeholder="*******" formControlName="password">
+                </div>
+                 <div class="error-list" *ngIf="fc.password.errors && isSubmitted">
+                        <div *ngIf="fc.password.errors.required">Should not be empty</div>
+                    </div>
+                <div class="button">
+                    <button type="submit">Login</button>
+                </div>
+            </div>
+        </form>
+    </div>
+   
+</div>

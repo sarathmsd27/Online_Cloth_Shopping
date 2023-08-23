@@ -1,0 +1,37 @@
+<header>
+  <div class="logo">
+    <img src="assets/Frontimg/logo.png" alt="Logo" />
+    <p style="font-family: 'Courier New', Courier, monospace">
+      Let's $hoppify🛒🛒🛒
+    </p>
+  </div>
+
+  <div class="container">
+    <nav>
+      <div *ngIf="!isAuth">
+        <button class="/login"><a routerLink="/login">Login</a></button>
+      </div>
+
+      <br/>
+      <ul>
+        <div *ngIf="isAuth" class="menu">
+          <li><a routerLink="/home">HOME</a></li>
+          <li>
+            <a routerLink="/cart-page"
+              >CART<span *ngIf="cartQuantity">{{ cartQuantity }}</span></a
+            >
+          </li>
+          <li class="menu-prof">
+            <a routerLink="/dashboard">{{ user.name }}</a>
+            <div class="menu-container">
+              <a routerLink="/Profile">PROFILE</a>
+              <a routerLink="/order">ORDER</a>
+              <a (click)="logout()">LOGOUT</a>
+            </div>
+          </li>
+        </div>
+      </ul>
+    </nav>
+  </div>
+</header>
+ 

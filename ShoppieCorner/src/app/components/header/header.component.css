@@ -1,0 +1,92 @@
+
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ccd5f1;
+    z-index: 999;
+    padding: 0 20px;
+    width:auto;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+    position: sticky;
+    top: 0%;
+    left:0%
+}
+li {
+    list-style: none;  
+}
+
+.login{ 
+    font-family:monospace;
+    font-size: medium;
+    float:right;
+    font-weight: 300;
+    display: inline;
+    width: 50px;
+    text-decoration-color: rgb(2, 15, 15);
+}
+  
+li a{
+    text-decoration: none;
+     color: #1a1a1a;
+     font-size: large;
+     transition: 0.3s ease;
+     display: inline-block;
+   
+}
+ul a:hover{
+    text-decoration: none;
+    color: #1a1a1a;
+    font-size: large;
+    transition: 0.3s ease;
+}
+
+.menu{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+       
+}
+.menu-prof{
+    position: relative
+}
+.menu-container{
+    position: absolute;
+    z-index:1;
+    background-color: whitesmoke;
+    display: none;  
+    padding: 1rem;
+}
+.menu-container a{
+    padding:1rem;
+}
+
+.menu-prof:hover .menu-container{
+    display:block
+}
+.menu-container a{
+    width:100%;
+    min-width:5rem;
+}
+
+
+.menu li{
+    list-style: none;
+    padding: 0 25px;
+    position: relative;
+
+}
+.menu li a:hover,
+.menu li a:active {
+     color: rgb(5, 170, 121);
+}
+
+.menu li a span{
+    background-color:#f84242;
+    color:rgb(243, 238, 238);
+    padding:0.1rem 0.45rem;
+    border-radius:100rem;
+    font-size: 1rem;
+}

@@ -1,0 +1,53 @@
+section img {
+  width: 80rem;
+  height: 50rem;
+  padding-left: 3rem;
+}
+
+.frontpage {
+  align-items: center;
+  text-align: center;
+  
+}
+
+section h1 {
+  color: #0b615b;
+
+}
+
+section h2 {
+  color: #040505;
+
+}
+
+section h4 {
+  color: #0b615b;
+}
+
+section {
+  padding-bottom: 2rem;
+}
+
+.container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+    margin-top:3rem;
+   padding:0 1rem 2rem 0;
+   text-align: center;
+}
+.details{
+  width:25rem;
+
+  background-color: aliceblue;
+}
+form{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    padding: 1px;
+}
+.input-container{
+  padding:10px
+}
