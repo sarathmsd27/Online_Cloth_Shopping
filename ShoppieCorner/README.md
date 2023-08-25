@@ -92,6 +92,12 @@
        2-Porduct details components
        3-Cart components
 
+       Note:
+       1)To run the application use ng serve.
+       2)to run the backend application.Use nodemon server.ts
+       Use this mailid:sarath@gmail.com
+                password:sarath123
+
 # -----------------Backend ------------------------
  
  setup backend for making restfull api
